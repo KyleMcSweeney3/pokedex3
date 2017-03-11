@@ -19,6 +19,7 @@
 		E45DE3B41E67DD2200E1AF1D /* pokemon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E45DE3B31E67DD2200E1AF1D /* pokemon.ttf */; };
 		E45DE3B91E67DECA00E1AF1D /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E45DE3B81E67DECA00E1AF1D /* music.mp3 */; };
 		E45DE3BB1E67DED200E1AF1D /* music.png in Resources */ = {isa = PBXBuildFile; fileRef = E45DE3BA1E67DED200E1AF1D /* music.png */; };
+		E4AB8A411E725B380023074B /* PokemonDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AB8A401E725B380023074B /* PokemonDetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		E45DE3B31E67DD2200E1AF1D /* pokemon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pokemon.ttf; sourceTree = "<group>"; };
 		E45DE3B81E67DECA00E1AF1D /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
 		E45DE3BA1E67DED200E1AF1D /* music.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = music.png; sourceTree = "<group>"; };
+		E4AB8A401E725B380023074B /* PokemonDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonDetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				E45DE3991E67A63400E1AF1D /* ViewController.swift */,
+				E4AB8A401E725B380023074B /* PokemonDetailVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 				E45DE3B01E67AE2F00E1AF1D /* PokeCell.swift in Sources */,
 				E45DE3AD1E67A93000E1AF1D /* pokemon.swift in Sources */,
 				E45DE39A1E67A63400E1AF1D /* ViewController.swift in Sources */,
+				E4AB8A411E725B380023074B /* PokemonDetailVC.swift in Sources */,
 				E45DE3981E67A63400E1AF1D /* AppDelegate.swift in Sources */,
 				E45DE3B21E67B90E00E1AF1D /* csv.swift in Sources */,
 			);
@@ -366,6 +370,7 @@
 				E45DE3A81E67A63400E1AF1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
