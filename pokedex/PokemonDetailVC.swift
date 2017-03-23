@@ -30,8 +30,42 @@ class PokemonDetailVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        nameLabel.text = pokemon.name
+        nameLabel.text = pokemon.name.capitalized
         
+        let img = UIImage(named: "\(pokemon.pokedexId)")
+        mainImage.image = img
+        currEvoLbl.image = img
+        
+        pokemon.downloadPokemonDetail {
+            // Ensure we make it here
+            print("We made it fam")
+            
+            //Whatever we do here will only be called after the network call is complete
+            self.updateUI()
+            
+        }
+    }
+    
+    func updateUI() {
+        
+        descriptionLbl.text = pokemon.description
+        idLbl.text = "\(pokemon.pokedexId)"
+        attackLbl.text = pokemon.attack
+        defenseLbl.text = pokemon.defense
+        heightLbl.text = pokemon.height
+        weightLbl.text = pokemon.weight
+        typeLbl.text = pokemon.type
+        
+        if pokemon.nextEvolutionLevel != "" {
+            evolutionLbl.text = "Next Evolution: \(pokemon.nextEvolutionName) LVL \(pokemon.nextEvolutionLevel)."
+            print("\(pokemon.nextEvolutionId)")
+            nextEvoLbl.isHidden = false
+            nextEvoLbl.image = UIImage(named: pokemon.nextEvolutionId)
+        } else {
+            evolutionLbl.text = "This pokemon does not evolve."
+            nextEvoLbl.isHidden = true
+        }
+
     }
     
     // Take back to home view -- EASY
